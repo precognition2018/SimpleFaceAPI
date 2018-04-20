@@ -4,7 +4,7 @@ import http.client, urllib.error
 headers = {
     # Request headers
     'Content-Type': 'application/json',
-    'Ocp-Apim-Subscription-Key': '995e68e5c0fb48b0a3b8fc0c0ee10bf6' # 5월 5일에는 키 변경 필요함
+    'Ocp-Apim-Subscription-Key': '995e68e5c0fb48b0a3b8fc0c0ee10bf6'
 }
 
 params = urllib.parse.urlencode({
