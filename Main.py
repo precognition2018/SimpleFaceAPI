@@ -16,7 +16,7 @@ params = urllib.parse.urlencode({
 
 try:
     conn = http.client.HTTPSConnection('westcentralus.api.cognitive.microsoft.com')
-    conn.request("POST", "/face/v1.0/?detect%s" % params, '{"url": "http://image.hankookilbo.com/i.aspx?Guid=7597c84f1b8c4d84aecec5aa4b300f10&Month=201608&size=640"}', headers)
+    conn.request("POST", "/face/v1.0/detect?%s" % params, '{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Moon_Jae-in_%282017-10-01%29_cropped.jpg/250px-Moon_Jae-in_%282017-10-01%29_cropped.jpg"}', headers)
     response = conn.getresponse()
     data = response.read()
     print(data)
